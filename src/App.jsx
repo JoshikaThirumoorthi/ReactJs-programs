@@ -11,12 +11,18 @@ import Calculator from './components/Calculator'
 import UserList from './components/fetching_API/UserList'
 import Tabs from './components/Tabs'
 import ThemeToggle from './components/ThemeToggle'
+import { BrowserRouter, Route ,Routes } from 'react-router-dom'
 
 function App(){
   return(
     <>
-    <ThemeToggle />
-    
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Tabs />} />
+        <Route path="/" element={<ThemeToggle />} />
+        <Route path ="/" element={<ColorPicker />} />
+      </Routes>
+    </BrowserRouter>
     
     </>
   )
