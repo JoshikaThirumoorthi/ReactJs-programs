@@ -10,7 +10,7 @@ export default function ThemeToggle() {
                 <p className="mb-6 text-lg">click the button to toggle theme🌟🌓</p>
                 <button 
                     onClick={() => setIsDark(!isDark)}
-                    className="px-6 py-2 rounded-lg font-semibold bg-violet-500 text-white hover:bg-violet-600 transition"
+                    className="px-6 py-2 rounded-lg font-semibold bg-violet-500 text-white hover:bg-violet-600 transition-all duration-300"
                 >
                     Select Theme
                 </button>
